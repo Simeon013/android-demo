@@ -1,5 +1,6 @@
 package Simeon013.demo;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -50,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    public void calculer(View view){
+        Intent intent = new Intent(this,Calculatrice.class);
+        startActivity( intent );
+        finish();
     }
 
     @Override
